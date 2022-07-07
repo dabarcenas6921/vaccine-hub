@@ -18,13 +18,16 @@ function getDatabaseUri() {
   );
 }
 
+const BCRYPT_WORK_FACTOR = 13;
+
 console.log("Vaccine hub config:".yellow);
 console.log("Port:".blue, PORT);
 console.log("Database URI:".blue, getDatabaseUri());
 console.log("Vaccine hub config:".green);
 console.log("---");
 
-module.export = {
+module.exports = {
   PORT,
+  BCRYPT_WORK_FACTOR,
   getDatabaseUri,
 };

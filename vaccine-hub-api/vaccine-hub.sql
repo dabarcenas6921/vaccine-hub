@@ -1,5 +1,5 @@
 \echo 'Delete and recreate vaccine-hub db?'
-\prompt 'Return for yes or control-c to cancel > ' answer
+\prompt 'Return yes or control-C to cancel >' answer
 
 DROP DATABASE vaccine_hub;
 CREATE DATABASE vaccine_hub;
